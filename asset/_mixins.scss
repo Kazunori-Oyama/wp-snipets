@@ -1,0 +1,15 @@
+@mixin mediaQuery_M {
+    @media (min-width: ($mediaQuery_M)) {
+      @content;
+    }
+  }
+  @mixin mediaQuery_L {
+    @media (max-width: ($mediaQuery_L)) {
+      @content;
+    }
+  }
+  @mixin flexCentering{
+      display:flex;
+      justify-content: cetner;
+      align-items: center;
+  }

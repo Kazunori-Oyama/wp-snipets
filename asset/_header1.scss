@@ -1,0 +1,39 @@
+// headers
+.header{
+    width:100%;
+    max-width:980px;
+    margin:auto;
+    padding-left:$baseSpacing;
+    padding-right:$baseSpacing;
+    display:flex;
+    flex-direction: row;
+    align-items: center;
+    padding-top:$XS;
+    padding-bottom:$XS;
+}
+.header_v{
+    flex-direction:column;
+}
+.header__logo{
+    width:120px;
+}
+.header__logo-img{
+    width:100%;
+    height:auto;
+}
+.header__main-nav{
+    width:100%;
+   
+}
+.header__main-nav,
+.header__second-nav{
+    padding-left:0;
+    list-style:none;
+    display:flex;
+    flex-direction:row;
+    align-items: center;
+    justify-content: space-between;
+}
+.menu-item>a{
+    color:$mainBlack;
+}
