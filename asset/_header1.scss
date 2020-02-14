@@ -11,9 +11,7 @@
     padding-top:$XS;
     padding-bottom:$XS;
 }
-.header_v{
-    flex-direction:column;
-}
+
 .header__logo{
     width:120px;
 }
@@ -21,18 +19,34 @@
     width:100%;
     height:auto;
 }
-.header__main-nav{
+.header__main-nav-wrap{
     width:100%;
-   
+    position: absolute;
+    right:100%;
+    height:100%;
+    top:0;
+    transition:right 0.3s linear;
+    @include mediaQuery_M{
+        position:static;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    &.js-nav-open{
+        right:0;
+    }
 }
 .header__main-nav,
 .header__second-nav{
-    padding-left:0;
     list-style:none;
+    @include mediaQuery_M{
+    padding-left:0;
     display:flex;
     flex-direction:row;
     align-items: center;
     justify-content: space-between;
+    }
+    
 }
 .menu-item>a{
     color:$mainBlack;
