@@ -50,12 +50,10 @@ p{
 figcaption{
     font-size:$S;
 }
+a{
+    display:inline-block;
+    width:100%;
+}
 
 
-.between *[class^="col"]:nth-child(odd){
-    padding-left:0;
-}
-.between *[class^="col"]:nth-child(even){
-    padding-right:0;
-}
 

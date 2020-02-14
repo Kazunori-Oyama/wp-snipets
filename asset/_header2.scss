@@ -1,0 +1,45 @@
+// headers
+$headerWidth:280px;
+.content{
+    width:calc(100% - #{$headerWidth});
+    margin-right: 0;
+    margin-left: auto;
+}
+.header{
+    width:$headerWidth;
+    height:100vh;
+    position:fixed;
+    top:0;
+    left:0;
+    z-index:999;
+    padding-left:$baseSpacing;
+    padding-right:$baseSpacing;
+    display:flex;
+    flex-direction: column;
+    padding-top:$XS;
+    padding-bottom:$XS;
+}
+
+.header__logo{
+    width:100%;
+    padding-left:$baseSpacing;
+    padding-right:$baseSpacing;
+    @include flexCentering;
+}
+.header__logo-img{
+    width:100%;
+    height:auto;
+}
+.header__main-nav-wrap{
+    width:100%;
+   
+}
+.header__main-nav,
+.header__second-nav{
+    list-style:none;
+    padding-left:0;
+
+}
+.menu-item>a{
+    color:$mainBlack;
+}
