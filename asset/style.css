@@ -1,6 +1,6 @@
 .header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: row-reverse;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
@@ -156,6 +156,7 @@
 }
 
 .header__button {
+	z-index: 900;
 	position: relative;
 	width: 44px;
 	height: 44px;
@@ -193,14 +194,6 @@
 .js-nav-open .button__line-2 {
 	bottom: 50%;
 	transform: rotate(315deg);
-}
-
-html,
-body {
-	margin-top: 0 !important;
-	margin-right: 0 !important;
-	margin-bottom: 0 !important;
-	margin-left: 0 !important;
 }
 
 img {
@@ -253,6 +246,10 @@ a {
 }
 
 @media (min-width: 640px) {
+
+.header {
+	flex-direction: row;
+}
 
 .header__main-nav-wrap {
 	display: flex;

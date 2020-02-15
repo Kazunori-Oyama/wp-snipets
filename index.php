@@ -10,6 +10,12 @@
 <body>
     <div class="body-container">
         <header class="header">
+        <div class="header__button-wrap">
+                <button class="header__button">
+                    <span class="button__line button__line-1"></span>
+                    <span class="button__line button__line-2"></span>
+                </button>
+            </div>
             <div class="header__logo">
                 <a href="<?php echo esc_url(home_url());?>"><img src="https://placehold.jp/250x150.png?text=logo" alt="" class="header__logo-img"></a>
             </div>
@@ -17,24 +23,11 @@
                 <?php wp_nav_menu(array('menu'=>'main-nav','container' => false,'menu_class'=>'header__main-nav')); ?>
                 <?php wp_nav_menu(array('menu'=>'second-nav','container' => false,'menu_class'=>'header__second-nav')); ?>
             </div>
-            <div class="header__button-wrap">
-                <button class="header__button">
-                    <span class="button__line button__line-1"></span>
-                    <span class="button__line button__line-2"></span>
-                </button>
-            </div>
+            
 
         </header>
         
-                <!-- <div class="col3">
-                    conent
-                </div>
-                <div class="col4">
-                    content
-                </div>
-                <div class="col5">
-                    content
-                </div> -->
+                
             </div>
         </div>
     </div>
