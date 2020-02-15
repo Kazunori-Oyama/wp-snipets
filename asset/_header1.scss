@@ -33,9 +33,6 @@
         flex-direction: row;
         align-items: center;
     }
-    &.js-nav-open{
-        right:0;
-    }
 }
 .header__main-nav,
 .header__second-nav{
@@ -51,4 +48,9 @@
 }
 .menu-item>a{
     color:$mainBlack;
+}
+
+.js-nav-open .header__main-nav-wrap{
+    right:0;
+    top:0;
 }
