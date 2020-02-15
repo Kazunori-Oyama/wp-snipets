@@ -1,0 +1,35 @@
+.header__button{
+    position: relative;
+    width:44px;
+    height:44px;
+    background-color: $mainColor;
+}
+.button__line{
+    transition:all 0.3s ease;
+    position: absolute;
+    width:30px;
+    height:1px;
+    background-color: #fff;
+    left:0;
+    right:0;
+    margin:auto;
+}
+.button__line-1{
+    top:35%;
+}
+.button__line-2{
+    bottom:35%;
+}
+.js-nav-open{
+    .button__line{
+        transform-origin: center;
+    }
+    .button__line-1{
+        transform:rotate(45deg);
+        top:50%;
+    }
+    .button__line-2{
+        transform: rotate(315deg);
+        bottom:50%;
+    }
+}

@@ -17,6 +17,12 @@
                 <?php wp_nav_menu(array('menu'=>'main-nav','container' => false,'menu_class'=>'header__main-nav')); ?>
                 <?php wp_nav_menu(array('menu'=>'second-nav','container' => false,'menu_class'=>'header__second-nav')); ?>
             </div>
+            <div class="header__button-wrap">
+                <button class="header__button">
+                    <span class="button__line button__line-1"></span>
+                    <span class="button__line button__line-2"></span>
+                </button>
+            </div>
 
         </header>
         <div class="content">
