@@ -1,11 +1,7 @@
-//media queries
-$mediaQuery_M: 640px; 
-$mediaQuery_L: 1280px;
-$baseSpacing:15px;
-$containerWidth:980px;
+
 
 @import "_mixins";
-@import "_sizing";
+@import "_settings";
 @import "header1";
 @import "grids";
 @import "buttons";
