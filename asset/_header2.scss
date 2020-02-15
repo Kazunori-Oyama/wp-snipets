@@ -1,29 +1,44 @@
 // headers
+//variables
 $headerWidth:280px;
+
+
 .content{
     width:calc(100% - #{$headerWidth});
     margin-right: 0;
     margin-left: auto;
 }
 .header{
-    width:$headerWidth;
-    height:100vh;
     position:fixed;
-    top:0;
     left:0;
+    top:0;
     z-index:999;
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
     padding-left:$baseSpacing;
     padding-right:$baseSpacing;
-    display:flex;
-    flex-direction: column;
-    padding-top:$XS;
-    padding-bottom:$XS;
+
+    @include mediaQuery_M{
+        flex-direction: column;
+        justify-content: flex-start;
+        width:$headerWidth;
+        height:100vh;
+        top:0;
+        left:0;
+        padding-left:$baseSpacing;
+        padding-right:$baseSpacing;
+        padding-top:$XS;
+        padding-bottom:$XS;
+    }
+
 }
 
 .header__logo{
-    width:100%;
-    padding-left:$baseSpacing;
-    padding-right:$baseSpacing;
+    width:120px;
+
     @include flexCentering;
 }
 .header__logo-img{
@@ -31,8 +46,14 @@ $headerWidth:280px;
     height:auto;
 }
 .header__main-nav-wrap{
-    width:100%;
-   
+    position: absolute;
+    left:-100%;
+    transition:left $animation_basic;
+    @include mediaQuery_M{
+        position:static;
+        left:0;
+        width:100%;
+    }
 }
 .header__main-nav,
 .header__second-nav{
@@ -42,4 +63,8 @@ $headerWidth:280px;
 }
 .menu-item>a{
     color:$mainBlack;
+}
+.js-nav-open .header__main-nav-wrap{
+    left:0;
+    top:0;
 }
