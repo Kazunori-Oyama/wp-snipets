@@ -270,5 +270,9 @@ a {
 	padding-left: 0;
 }
 
+.header__button {
+	display: none;
+}
+
 }
 
