@@ -22,16 +22,16 @@
             <div class="header__logo">
                 <a href="<?php echo esc_url(home_url());?>"><img src="https://placehold.jp/250x150.png?text=logo" alt="" class="header__logo-img"></a>
             </div>
-            <div class="header__main-nav-wrap">
+            <nav class="header__main-nav-wrap">
                 <?php wp_nav_menu(array('menu'=>'main-nav','container' => false,'menu_class'=>'header__main-nav')); ?>
                 <?php wp_nav_menu(array('menu'=>'second-nav','container' => false,'menu_class'=>'header__second-nav')); ?>
-                <div class="header__sns-wrap">
+                <nav class="header__sns-wrap">
                     <a href=""><i class="header__sns-icon fab-fa-facebook-f"></i></a>
                     <a href=""><i class="header__sns-icon fab fa-twitter"></i></a>
                     <a href=""><i class="header__sns-icon fab fa-instagram"></i></a>
                     <a href=""><i class="header__sns-icon fab fa-youtube"></i></a>
-                </div>
-            </div>
+                </nav>
+            </nav>
             
             
 
