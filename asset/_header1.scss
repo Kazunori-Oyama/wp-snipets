@@ -29,7 +29,7 @@
     right:100%;
     height:100%;
     top:0;
-    transition:right $animation_basic;
+    transition:right $animation_speed_basic;
     @include mediaQuery_M{
         position:static;
         display: flex;

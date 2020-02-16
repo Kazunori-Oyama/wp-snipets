@@ -1,12 +1,19 @@
 // headers
 //variables
 $headerWidth:280px;
+$headerHeight:80px;
 
 
 .content{
-    width:calc(100% - #{$headerWidth});
-    margin-right: 0;
-    margin-left: auto;
+    width:100%;
+    padding-top:$headerHeight;
+    @include mediaQuery_M{
+        padding-top:0;
+        width:calc(100% - #{$headerWidth});
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
 }
 .header{
     position:fixed;
@@ -14,7 +21,7 @@ $headerWidth:280px;
     top:0;
     z-index:999;
     width:100%;
-    height:auto;
+    height:$headerHeight;
     display:flex;
     flex-direction: row-reverse;
     justify-content: space-between;
@@ -48,7 +55,7 @@ $headerWidth:280px;
 .header__main-nav-wrap{
     position: absolute;
     left:-100%;
-    transition:left $animation_basic;
+    transition:left $animation_speed_basic;
     @include mediaQuery_M{
         position:static;
         left:0;

@@ -3,9 +3,9 @@ const {
     dest,
     watch
 } = require("gulp");
-const autoprefixer = require('gulp-autoprefixer')
 const sass = require("gulp-sass");
 const gulpPostcss = require('gulp-postcss');
+const autoprefixer = require('gulp-autoprefixer')
 const cssDeclarationSorter = require('css-declaration-sorter');
 const mmq = require('gulp-merge-media-queries');
 

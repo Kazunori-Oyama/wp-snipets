@@ -1,18 +1,26 @@
+.content {
+	width: 100%;
+	padding-top: 80px;
+}
+
 .header {
 	display: flex;
-	flex-direction: row;
-	align-items: center;
+	z-index: 999;
+	position: fixed;
+	top: 0;
+	left: 0;
+	flex-direction: row-reverse;
 	justify-content: space-between;
 	width: 100%;
-	max-width: 980px;
-	margin: auto;
-	padding-top: 0.75rem;
+	height: 80px;
 	padding-right: 15px;
-	padding-bottom: 0.75rem;
 	padding-left: 15px;
 }
 
 .header__logo {
+	display: flex;
+	align-items: center;
+	justify-content: center;
 	width: 120px;
 }
 
@@ -23,15 +31,13 @@
 
 .header__main-nav-wrap {
 	position: absolute;
-	top: 0;
-	right: 100%;
-	width: 100%;
-	height: 100%;
-	transition: right 0.3s linear;
+	left: -100%;
+	transition: left 0.3s linear;
 }
 
 .header__main-nav,
 .header__second-nav {
+	padding-left: 0;
 	list-style: none;
 }
 
@@ -41,7 +47,7 @@
 
 .js-nav-open .header__main-nav-wrap {
 	top: 0;
-	right: 0;
+	left: 0;
 }
 
 .row {
@@ -156,6 +162,7 @@
 }
 
 .header__button {
+	z-index: 900;
 	position: relative;
 	width: 44px;
 	height: 44px;
@@ -195,12 +202,17 @@
 	transform: rotate(315deg);
 }
 
-html,
-body {
-	margin-top: 0 !important;
-	margin-right: 0 !important;
-	margin-bottom: 0 !important;
-	margin-left: 0 !important;
+.js-back-to-top {
+	display: flex;
+	position: fixed;
+	right: 15px;
+	bottom: 15px;
+	align-items: center;
+	justify-content: center;
+	width: 44px;
+	height: 44px;
+	background-color: black;
+	color: white;
 }
 
 img {
@@ -254,20 +266,30 @@ a {
 
 @media (min-width: 640px) {
 
-.header__main-nav-wrap {
-	display: flex;
-	position: static;
-	flex-direction: row;
-	align-items: center;
+.content {
+	width: calc(100% - 280px);
+	margin-right: 0;
+	margin-left: auto;
+	padding-top: 0;
 }
 
-.header__main-nav,
-.header__second-nav {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: space-between;
-	padding-left: 0;
+.header {
+	top: 0;
+	left: 0;
+	flex-direction: column;
+	justify-content: flex-start;
+	width: 280px;
+	height: 100vh;
+	padding-top: 0.75rem;
+	padding-right: 15px;
+	padding-bottom: 0.75rem;
+	padding-left: 15px;
+}
+
+.header__main-nav-wrap {
+	position: static;
+	left: 0;
+	width: 100%;
 }
 
 .header__button {
