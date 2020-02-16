@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title> 
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/60a37afe1a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free.min.css" media="all"><link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-font-face.min.css" media="all">
+    <link rel="stylesheet" href="https://kit-free.fontawesome.com/releases/latest/css/free-v4-shims.min.css" media="all">
     <?php wp_head();?>  
 </head>
 <body>
@@ -29,7 +32,7 @@
         <div class="content" style="height:1000px;">
             content
         </div>
-        <a href="#" class="js-back-to-top"><i class="fa fa-angle-right">button</i></a>
+        <a href="#" class="js-back-to-top"><i class="fa fa-angle-right"></i></a>
                 
             </div>
         </div>
