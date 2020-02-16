@@ -48,7 +48,7 @@ $headerWidth:280px;
 .header__main-nav-wrap{
     position: absolute;
     left:-100%;
-    transition:left $animation_basic;
+    transition:left $animation_speed_basic;
     @include mediaQuery_M{
         position:static;
         left:0;
