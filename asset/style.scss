@@ -1,0 +1,56 @@
+
+
+@import "_mixins";
+@import "_settings";
+@import "header1";
+@import "grids";
+@import "buttons";
+
+// resets
+html,body{
+    margin-top:0!important;
+    margin-right:0!important;
+    margin-bottom:0!important;
+    margin-left:0!important;
+}
+img{
+    width:100%;
+}
+//fonts
+html{
+    font-size:14px;
+}
+body{
+    font-size:1em;
+}
+*{
+    box-sizing:border-box;
+}
+h1{
+    font-size:$XL;
+}
+h2{
+    font-size:$L;
+}
+h3{
+    font-size:$M;
+}
+h4{
+    font-size:$M;
+}
+h5{
+    font-size:$M;
+}
+p{
+    font-size:$M
+}
+figcaption{
+    font-size:$S;
+}
+a{
+    display:inline-block;
+    width:100%;
+}
+
+
+

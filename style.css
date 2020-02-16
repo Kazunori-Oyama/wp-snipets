@@ -1,0 +1,16 @@
+/*
+Theme Name: dev-base
+Theme URI: 
+Author: Kazunori Oyama
+Author URI: 
+Description: WordPress Theme for quick development
+Version: 1.0
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: starter theme
+Text Domain: dev-base
+
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import url('asset/style.css');

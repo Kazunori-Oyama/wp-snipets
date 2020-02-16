@@ -1,0 +1,28 @@
+{
+  "name": "wp-snipets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kazunori-Oyama/wp-snipets.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Kazunori-Oyama/wp-snipets/issues"
+  },
+  "homepage": "https://github.com/Kazunori-Oyama/wp-snipets#readme",
+  "devDependencies": {
+    "css-declaration-sorter": "^5.1.1",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-merge-media-queries": "^0.2.1",
+    "gulp-postcss": "^8.0.0",
+    "gulp-sass": "^4.0.2"
+  }
+}
