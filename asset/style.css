@@ -45,6 +45,11 @@
 	color: #070707;
 }
 
+.header__sns-wrap {
+	display: flex;
+	justify-content: space-between;
+}
+
 .js-nav-open .header__main-nav-wrap {
 	top: 0;
 	left: 0;

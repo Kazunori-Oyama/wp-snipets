@@ -26,7 +26,7 @@
                 <?php wp_nav_menu(array('menu'=>'main-nav','container' => false,'menu_class'=>'header__main-nav')); ?>
                 <?php wp_nav_menu(array('menu'=>'second-nav','container' => false,'menu_class'=>'header__second-nav')); ?>
                 <nav class="header__sns-wrap">
-                    <a href=""><i class="header__sns-icon fab-fa-facebook-f"></i></a>
+                    <a href=""><i class="header__sns-icon fab fa-facebook-f"></i></a>
                     <a href=""><i class="header__sns-icon fab fa-twitter"></i></a>
                     <a href=""><i class="header__sns-icon fab fa-instagram"></i></a>
                     <a href=""><i class="header__sns-icon fab fa-youtube"></i></a>
@@ -39,7 +39,7 @@
         <div class="content" style="height:1000px;">
             content
         </div>
-        <a href="#" class="js-back-to-top"><i class="fa fa-angle-right"></i></a>
+        <a href="#" class="js-back-to-top"><i class="fa fa-angle-up"></i></a>
                 
             </div>
         </div>
