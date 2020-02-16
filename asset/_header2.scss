@@ -1,12 +1,18 @@
 // headers
 //variables
 $headerWidth:280px;
+$headerHeight:80px;
 
 
 .content{
-    width:calc(100% - #{$headerWidth});
-    margin-right: 0;
-    margin-left: auto;
+    width:100%;
+    padding-top:$headerWidth;
+    @include mediaQuery_M{
+        width:calc(100% - #{$headerWidth});
+        margin-right: 0;
+        margin-left: auto;
+    }
+    
 }
 .header{
     position:fixed;
@@ -14,7 +20,7 @@ $headerWidth:280px;
     top:0;
     z-index:999;
     width:100%;
-    height:auto;
+    height:$headerHeight;
     display:flex;
     flex-direction: row-reverse;
     justify-content: space-between;
