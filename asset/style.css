@@ -1,6 +1,6 @@
 .content {
 	width: 100%;
-	padding-top: 280px;
+	padding-top: 80px;
 }
 
 .header {
@@ -270,6 +270,7 @@ a {
 	width: calc(100% - 280px);
 	margin-right: 0;
 	margin-left: auto;
+	padding-top: 0;
 }
 
 .header {

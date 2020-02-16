@@ -6,8 +6,9 @@ $headerHeight:80px;
 
 .content{
     width:100%;
-    padding-top:$headerWidth;
+    padding-top:$headerHeight;
     @include mediaQuery_M{
+        padding-top:0;
         width:calc(100% - #{$headerWidth});
         margin-right: 0;
         margin-left: auto;
