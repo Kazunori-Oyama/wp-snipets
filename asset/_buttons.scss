@@ -1,3 +1,4 @@
+//styles for global navigation button
 .header__button{
     position: relative;
     width:44px;
@@ -36,4 +37,15 @@
         transform: rotate(315deg);
         bottom:50%;
     }
+}
+//styles for back to top button
+.js-back-to-top{
+    @include flexCentering;
+    width:44px;
+    height:44px;
+    background-color:black;
+    color:white;
+    position:fixed;
+    right:$baseSpacing;
+    bottom:$baseSpacing;
 }
