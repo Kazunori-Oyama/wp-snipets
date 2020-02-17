@@ -71,6 +71,10 @@ $headerHeight:80px;
 .menu-item>a{
     color:$mainBlack;
 }
+.header__sns-wrap{
+    display:flex;
+    justify-content: space-between;
+}
 .js-nav-open .header__main-nav-wrap{
     left:0;
     top:0;
